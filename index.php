@@ -109,7 +109,7 @@ class details_Settings_Page {
 						foreach( $field['options'] as $key => $label ) {
 							$options.= sprintf('<option value="%s" %s>%s</option>',
 								$key,
-								selected($value, $key, false),
+								$selected = $value == $key ? 'selected' : '',
 								$label
 							);
 						}
